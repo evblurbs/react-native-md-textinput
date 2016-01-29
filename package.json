@@ -23,7 +23,7 @@
     "url": "https://github.com/evblurbs/react-native-md-textinput/issues"
   },
   "homepage": "https://github.com/evblurbs/react-native-md-textinput#readme",
-  "dependencies": {
-    "react-native": "^0.18.1"
+  "peerDependencies": {
+    "react-native": "*"
   }
 }
