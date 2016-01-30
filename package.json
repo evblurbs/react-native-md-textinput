@@ -1,6 +1,6 @@
 {
   "name": "react-native-md-textinput",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "React Native TextInput styled with Material Design.",
   "main": "lib/TextField.js",
   "repository": {
