@@ -2,7 +2,6 @@
 
 React Native TextInput styled with Material Design.
 
-
 ![demo](/demo.gif)
 
 ## Installation
