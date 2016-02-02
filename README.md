@@ -11,7 +11,7 @@ npm install react-native-md-textinput
 
 ## Usage
 
-To going to refer to the `react-native-md-textinput` Component as `TextField`. You can name it whatever you like when importing it.
+I'm going to refer to the `react-native-md-textinput` Component as `TextField`. You can name it whatever you like when importing it.
 
 The most basic usage is to import the `TextField` Component and render it with the props `label` and `highlightColor`. Note that this example uses the [ScrollView](https://facebook.github.io/react-native/docs/scrollview.html) Component. This allows the keyboard to be dismissed when finished editing, and the height of `TextField` Component is preserved, as it's wrapper has style of `flex` set to `1`.<sup>1</sup>
 
@@ -69,7 +69,6 @@ borderColor | string | `#E0E0E0` | This string represents the hex code, rgb, or 
 
 ## TODO
 
-- [ ] Handle fields with an initial value
 - [ ] Look into wether the Component should have `flex` set to `1`
 - [ ] Support multi-line TextInput fields
 - [ ] Support dense style
