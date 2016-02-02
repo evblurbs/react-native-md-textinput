@@ -1,6 +1,6 @@
 /**
  * Sample React Native App
- * https://github.com/facebook/react-native
+ * that demos the react-native-md-textinput
  */
 'use strict';
 import React, {
@@ -11,7 +11,7 @@ import React, {
   ScrollView
 } from 'react-native';
 
-import TextField from './lib/TextField';
+import TextField from 'react-native-md-textinput';
 
 class FloatingLabel extends Component {
   constructor(props: Object) {
@@ -36,6 +36,7 @@ class FloatingLabel extends Component {
           onChangeText={(text) => {
             this.inputs.name = text;
           }}
+          value={'Jam Man'}
         />
         <TextField
           label={'Address'}
