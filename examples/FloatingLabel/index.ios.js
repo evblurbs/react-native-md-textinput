@@ -36,7 +36,8 @@ class FloatingLabel extends Component {
           onChangeText={(text) => {
             this.inputs.name = text;
           }}
-          value={'Jam Man'}
+          value={'Jane'}
+          dense={true}
         />
         <TextField
           label={'Address'}
@@ -48,6 +49,7 @@ class FloatingLabel extends Component {
           onSubmitEditing={() => {
             this.refs.cityInput.focus();
           }}
+          dense={true}
         />
         <TextField
           label={'City'}
@@ -63,6 +65,7 @@ class FloatingLabel extends Component {
           onChangeText={(text) => {
             this.inputs.state = text;
           }}
+          value={'WA'}
         />
         <TextField
           label={'Zip'}

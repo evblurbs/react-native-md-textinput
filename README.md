@@ -53,6 +53,12 @@ class App extends React.Component {
 }
 ```
 
+### Dense Styling
+
+To use the "dense" styling that matches the [Material Design Style Guide](https://www.google.com/design/spec/components/text-fields.html#text-fields-labels), you can set the prop `dense` to `true`. By default, this prop is set to `false`.
+
+![demo dense](/demo-dense.gif)
+
 ## Props
 
 Below are the props you can pass to the React Component to customize the TextInput.
@@ -64,10 +70,10 @@ highlightColor | string | | This string represents the hex code, rgb, or rgba co
 duration | number | `200` | A number representing the duration of floating label and underline animations in milliseconds.
 labelColor | string | `#9E9E9E` | This string represents the hex code, rgb, or rgba color of the textInput label when it is inactive.
 borderColor | string | `#E0E0E0` | This string represents the hex code, rgb, or rgba color of the textInput underline when it is inactive.
+dense | bool | `false` | If true, it will render the "dense" input field which is smaller in height and has smaller font sizes. You can view more [here](https://www.google.com/design/spec/components/text-fields.html#text-fields-labels).
 
 ## TODO
 
 - [ ] Support multi-line TextInput fields
-- [ ] Support dense style
 - [ ] Support character limit
 - [ ] Add option for dark theme
