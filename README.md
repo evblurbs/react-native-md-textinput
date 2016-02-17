@@ -71,6 +71,7 @@ duration | number | `200` | A number representing the duration of floating label
 labelColor | string | `#9E9E9E` | This string represents the hex code, rgb, or rgba color of the textInput label when it is inactive.
 borderColor | string | `#E0E0E0` | This string represents the hex code, rgb, or rgba color of the textInput underline when it is inactive.
 dense | bool | `false` | If true, it will render the "dense" input field which is smaller in height and has smaller font sizes. You can view more [here](https://www.google.com/design/spec/components/text-fields.html#text-fields-labels).
+underlineColorAndroid | string | `rgba(0,0,0,0)` | This sets the default underline color on Android to transparent ([Issue #1](https://github.com/evblurbs/react-native-md-textinput/issues/1)).
 
 ## TODO
 
