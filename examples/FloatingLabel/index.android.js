@@ -1,6 +1,6 @@
 /**
  * Sample React Native App
- * https://github.com/facebook/react-native
+ * that demos the react-native-md-textinput
  */
 'use strict';
 import React, {
@@ -8,23 +8,77 @@ import React, {
   Component,
   StyleSheet,
   Text,
-  View
+  ScrollView
 } from 'react-native';
 
+import TextField from 'react-native-md-textinput';
+
 class FloatingLabel extends Component {
+  constructor(props: Object) {
+    super(props);
+    this.inputs = {
+      name: '',
+      address: '',
+      city: '',
+      state: '',
+      zip: ''
+    };
+  }
   render() {
     return (
-      <View style={styles.container}>
+      <ScrollView style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          React Native Material Design TextInput
         </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Shake or press menu button for dev menu
-        </Text>
-      </View>
+        <TextField
+          label={'Name'}
+          highlightColor={'#00BCD4'}
+          onChangeText={(text) => {
+            this.inputs.name = text;
+          }}
+          value={'Jane'}
+          dense={true}
+        />
+        <TextField
+          label={'Address'}
+          highlightColor={'#FF5722'}
+          onChangeText={(text) => {
+            this.inputs.address = text;
+          }}
+          returnKeyType={'next'}
+          onSubmitEditing={() => {
+            this.refs.cityInput.focus();
+          }}
+          dense={true}
+        />
+        <TextField
+          label={'City'}
+          highlightColor={'#673AB7'}
+          onChangeText={(text) => {
+            this.inputs.city = text;
+          }}
+          ref="cityInput"
+        />
+        <TextField
+          label={'State'}
+          highlightColor={'#E91E63'}
+          onChangeText={(text) => {
+            this.inputs.state = text;
+          }}
+          value={'WA'}
+        />
+        <TextField
+          label={'Zip'}
+          highlightColor={'#F44336'}
+          onChangeText={(text) => {
+            this.inputs.zip = text;
+          }}
+          onBlur={() => {
+            console.log(this.inputs);
+          }}
+          keyboardType={'numeric'}
+        />
+      </ScrollView>
     );
   }
 }
@@ -32,20 +86,17 @@ class FloatingLabel extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#FFFFFF',
+    paddingTop: 50,
+    paddingLeft: 16,
+    paddingRight: 16
   },
   welcome: {
-    fontSize: 20,
+    fontSize: 18,
     textAlign: 'center',
     margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+    color: '#333'
+  }
 });
 
 AppRegistry.registerComponent('FloatingLabel', () => FloatingLabel);
