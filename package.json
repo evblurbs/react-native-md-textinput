@@ -3,6 +3,10 @@
   "version": "1.9.2",
   "description": "React Native TextInput styled with Material Design.",
   "main": "lib/TextField.js",
+  "scripts": {
+    "transpile": "babel src --out-dir lib",
+    "watch": "watch 'npm run transpile' src"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/evblurbs/react-native-md-textinput.git"
@@ -19,5 +23,11 @@
   },
   "author": "Evan Johnson",
   "license": "MIT",
-  "homepage": "https://github.com/evblurbs/react-native-md-textinput#readme"
+  "homepage": "https://github.com/evblurbs/react-native-md-textinput#readme",
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-plugin-syntax-flow": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "watch": "^0.17.1"
+  }
 }
