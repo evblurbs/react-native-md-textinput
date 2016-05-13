@@ -3,13 +3,8 @@
  * that demos the react-native-md-textinput
  */
 'use strict';
-import React, {
-  AppRegistry,
-  Component,
-  StyleSheet,
-  Text,
-  ScrollView
-} from 'react-native';
+import React, {Component} from "react";
+import {AppRegistry, StyleSheet, Text, ScrollView} from "react-native";
 
 import TextField from 'react-native-md-textinput';
 
