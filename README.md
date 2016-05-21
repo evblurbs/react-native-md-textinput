@@ -67,6 +67,9 @@ Prop | Type | Default | description
 -----|------|---------|------------
 label | string | | This string appears as the label.
 highlightColor | string | | This string represents the hex code, rgb, or rgba color of the textInput label and underline when it is active/focused on.
+keepHighlightColor | bool | false | If true will keep the highlight color active,
+labelFontFamily | string | | Adds a custom font to the label
+textInputFontFamily | string | | Adds a custom font to the text input
 duration | number | `200` | A number representing the duration of floating label and underline animations in milliseconds.
 labelColor | string | `#9E9E9E` | This string represents the hex code, rgb, or rgba color of the textInput label when it is inactive.
 borderColor | string | `#E0E0E0` | This string represents the hex code, rgb, or rgba color of the textInput underline when it is inactive.
