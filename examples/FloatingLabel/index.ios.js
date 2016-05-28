@@ -21,7 +21,8 @@ class FloatingLabel extends Component {
       address: '',
       city: '',
       state: '',
-      zip: ''
+      zip: '',
+      country: ''
     };
   }
   render() {
@@ -54,14 +55,29 @@ class FloatingLabel extends Component {
         <TextField
           label={'City'}
           highlightColor={'#673AB7'}
+          labelColor={'#000'}
           onChangeText={(text) => {
             this.inputs.city = text;
           }}
           ref="cityInput"
+          inputStyle={{
+            marginLeft: 20,
+            marginRight: 20,
+            height: 64,
+            lineHeight: 64
+          }}
+          wrapperStyle={{
+            height: 102
+          }}
+          labelStyle={{
+            color: '#000',
+            fontSize: 15
+          }}
         />
         <TextField
           label={'State'}
           highlightColor={'#E91E63'}
+          textColor={'#E91E63'}
           onChangeText={(text) => {
             this.inputs.state = text;
           }}
@@ -70,6 +86,8 @@ class FloatingLabel extends Component {
         <TextField
           label={'Zip'}
           highlightColor={'#F44336'}
+          textBlurColor={'#9E9E9E'}
+          textFocusColor={'#F44336'}
           onChangeText={(text) => {
             this.inputs.zip = text;
           }}
@@ -77,6 +95,14 @@ class FloatingLabel extends Component {
             console.log(this.inputs);
           }}
           keyboardType={'numeric'}
+          value={'98122'}
+        />
+        <TextField
+          label={'Country'}
+          highlightColor={'#009688'}
+          onChangeText={(text) => {
+            this.inputs.country = text;
+          }}
         />
       </ScrollView>
     );
