@@ -75,9 +75,18 @@ textBlurColor | string | | This string represents the hex code, rgb, or rgba col
 borderColor | string | `#E0E0E0` | This string represents the hex code, rgb, or rgba color of the TextInput underline when it is inactive.
 dense | bool | `false` | If true, it will render the "dense" input field which is smaller in height and has smaller font sizes. You can view more [here](https://www.google.com/design/spec/components/text-fields.html#text-fields-labels).
 underlineColorAndroid | string | `rgba(0,0,0,0)` | This sets the default underline color on Android to transparent ([Issue #1](https://github.com/evblurbs/react-native-md-textinput/issues/1)).
-inputStyle | Object | | Style Object to override the styles of the TextInput. WARNING: Diverging from the default Material Design styles can cause conflicts and side effects. Override at your own risk.
-wrapperStyle | Object | | Style Object to override the styles of the View that wraps the TextInput. WARNING: Diverging from the default Material Design styles can cause conflicts and side effects. Override at your own risk.
-labelStyle | Object | | Style Object to override the styles of the Label that animates on focus of the TextInput. WARNING: Diverging from the default Material Design styles can cause conflicts and side effects. Override at your own risk.
+
+### Style Overrides
+
+The main purpose of this component is to easily add a TextInput that matches the [Material Design Style Guide](https://www.google.com/design/spec/components/text-fields.html#text-fields-labels). With that said, there have been requests (i.e. [PR #4](https://github.com/evblurbs/react-native-md-textinput/pull/4)) to style the component beyond the [Material Design Style Guide](https://www.google.com/design/spec/components/text-fields.html#text-fields-labels). I've added the props below to allow you to do exactly that. **DO THIS AT YOUR OWN RISK**. Changing the layout requires an understanding of the main elements of this component (i.e. FloatingLabel, the Viewwrapper, and the TextInput), and may cause compatibility issues between Android and iOS ([Issue #2](https://github.com/evblurbs/react-native-md-textinput/issues/2)). I'll try to support any issues with these props, but they will be treated as second class citizens.
+
+Prop | Type | Default | description
+-----|------|---------|------------
+inputStyle | Object | | Object to override the styles of the TextInput.<sup>[1](#reactStyleObject)</sup>
+wrapperStyle | Object | | Object to override the styles of the View that wraps the TextInput.<sup>[1](#reactStyleObject)</sup>
+labelStyle | Object | | Object to override the styles of the Label that animates on focus of the TextInput.<sup>[1](#reactStyleObject)</sup>
+
+<a name="reactStyleObject">1</a>: Object to override styles needs to match the format of [inline styles](https://facebook.github.io/react/tips/inline-styles.html). You can find the supported properties [here](https://facebook.github.io/react-native/docs/style.html#supported-properties).
 
 ## TODO
 
