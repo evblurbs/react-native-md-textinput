@@ -6,7 +6,7 @@ React Native TextInput styled with Material Design.
 
 ## Installation
 ```
-npm install react-native-md-textinput
+npm install react-native-md-textinput --save
 ```
 
 ## Usage
