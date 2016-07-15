@@ -66,7 +66,10 @@ Below are the props you can pass to the React Component to customize the TextInp
 Prop | Type | Default | description
 -----|------|---------|------------
 label | string | | This string appears as the label.
-highlightColor | string | | This string represents the hex code, rgb, or rgba color of the TextInput label and underline when it is active/focused on.
+highlightColor | string | | This string represents the hex code, rgb, or rgba color of the textInput label and underline when it is active/focused on.
+keepHighlightColor | bool | false | If true will keep the highlight color active.
+labelFontFamily | string | | Adds a custom font to the label.
+textInputFontFamily | string | | Adds a custom font to the text input.
 duration | number | `200` | A number representing the duration of floating label and underline animations in milliseconds.
 labelColor | string | `#9E9E9E` | This string represents the hex code, rgb, or rgba color of the TextInput label when it is inactive.
 textColor | string | `#000` | This string represents the hex code, rgb, or rgba color of the text entered in the TextInput. Note: If you set textFocusColor or textBlurColor, those colors will override this one during the corresponding state of the TextInput.
@@ -93,6 +96,5 @@ labelStyle | Object | | Object to override the styles of the Label that animates
 
 ## TODO
 
-- [ ] Support multi-line TextInput fields
 - [ ] Support character limit
 - [ ] Add option for dark theme
