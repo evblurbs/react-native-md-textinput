@@ -78,6 +78,9 @@ multiline | bool | `false` | If true, it will allow multiline text input
 height | number | `undefined` | A number representing the initial height of the textInput
 autoGrow | bool | `false` | If true enables autogrow of the textInput 
 underlineColorAndroid | string | `rgba(0,0,0,0)` | This sets the default underline color on Android to transparent ([Issue #1](https://github.com/evblurbs/react-native-md-textinput/issues/1)).
+secureTextAllowUnmask | bool | `false` | This allows the secure password area to be unmasked.
+secureTextAllowUnmaskIconOn | element | `false` | This is the icon that is displayed when secureTextAllowUnmask is true
+secureTextAllowUnmaskIconOff | element | `false` | This is the icon that is displayed when secureTextAllowUnmask is true and the user has clicked the secureTextAllowUnmaskIconOn element
 
 ### Style Overrides
 
