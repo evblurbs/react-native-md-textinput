@@ -9,6 +9,12 @@ React Native TextInput styled with Material Design.
 npm install react-native-md-textinput
 ```
 
+#### Supporting older versions of react-native 
+| RN version | Library Version |
+|------------|-----------------|
+| \>= 0.46   | \>= 2.1.0       |
+| < 0.46     | 2.0.4           |
+
 ## Usage
 
 I'm going to refer to the `react-native-md-textinput` Component as `TextField`. You can name it whatever you like when importing it.
