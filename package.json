@@ -1,6 +1,6 @@
 {
   "name": "react-native-md-textinput",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "description": "React Native TextInput styled with Material Design.",
   "main": "lib/TextField.js",
   "repository": {
@@ -19,5 +19,8 @@
   },
   "author": "Evan Johnson",
   "license": "MIT",
-  "homepage": "https://github.com/evblurbs/react-native-md-textinput#readme"
+  "homepage": "https://github.com/evblurbs/react-native-md-textinput#readme",
+  "peerDependencies": {
+    "react-native": ">=0.46.0"
+  }
 }

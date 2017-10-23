@@ -7,3 +7,6 @@ npm-debug.log
 # examples
 examples/FloatingLabel/node_modules/
 examples/FloatingLabel/lib/
+
+# JetBrains IDEs
+.idea
